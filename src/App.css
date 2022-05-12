@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-image: url("https://picsum.photos/1300/715?grayscale");
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 200px;
+  background: #3e3e3e;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #9DF3C4;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+
+  animation-name: changingBorder;
+  animation-duration: 60s;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background-color: #9DF3C4;
+  color: #fff;
+  text-transform: capitalize;
+
+  animation-name: changingBgColor;
+  animation-duration: 60s;
+}
+
+.todo-input.edit {
+  border: 2px solid #9DF3C4;
+}
+
+.todo-button.edit {
+  background: linear-gradient(
+    90deg,
+    #9DF3C4 0%,
+    #62D2A2 100%
+  );
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    grey 0%,
+    #62D2A2 50%
+  );
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    grey 0%,
+    #9DF3C4 50%
+  );
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    grey 0%,
+    #D7FBE8 50%
+  );
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    grey 0%,
+    #1FAB89 50%
+  );
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
+.todoHeading{
+  color: #9DF3C4;
+  animation-name: changingColor;
+  animation-duration: 60s;
+}
+@keyframes changingColor{
+  0% {color: #9DF3C4;}
+  5% {color: #1e876d;}
+  10% {color: #9DF3C4;}
+  15% {color: #1e876d;}
+  20% {color: #9DF3C4;}
+  25% {color: #1e876d;}
+  30% {color: #9DF3C4;}
+  35% {color: #1e876d;}
+  40% {color: #9DF3C4;}
+  45% {color: #1e876d;}
+  50% {color:#9DF3C4;}  
+  55% {color: #9DF3C4;}
+  60% {color: #1e876d;}
+  65% {color: #9DF3C4;}
+  70% {color: #1e876d;}
+  75% {color: #9DF3C4;}
+  80% {color: #1e876d;}
+  85% {color: #9DF3C4;}
+  90% {color: #1e876d;}
+  95% {color: #9DF3C4;}
+  100% {color: #1e876d;}
+}
+@keyframes changingBgColor{
+  0% {background-color: #9DF3C4;}
+  5% {background-color: #1e876d;}
+  10% {background-color: #9DF3C4;}
+  15% {background-color: #1e876d;}
+  20% {background-color: #9DF3C4;}
+  25% {background-color: #1e876d;}
+  30% {background-color: #9DF3C4;}
+  35% {background-color: #1e876d;}
+  40% {background-color: #9DF3C4;}
+  45% {background-color: #1e876d;}
+  50% {background-color:#9DF3C4;}  
+  55% {background-color: #9DF3C4;}
+  60% {background-color: #1e876d;}
+  65% {background-color: #9DF3C4;}
+  70% {background-color: #1e876d;}
+  75% {background-color: #9DF3C4;}
+  80% {background-color: #1e876d;}
+  85% {background-color: #9DF3C4;}
+  90% {background-color: #1e876d;}
+  95% {background-color: #9DF3C4;}
+  100% {background-color: #1e876d;}
+}
+@keyframes changingBorder{
+  0% {border-color: #9DF3C4;}
+  5% {border-color: #1e876d;}
+  10% {border-color: #9DF3C4;}
+  15% {border-color: #1e876d;}
+  20% {border-color: #9DF3C4;}
+  25% {border-color: #1e876d;}
+  30% {border-color: #9DF3C4;}
+  35% {border-color: #1e876d;}
+  40% {border-color: #9DF3C4;}
+  45% {border-color: #1e876d;}
+  50% {border-color:#9DF3C4;}  
+  55% {border-color: #9DF3C4;}
+  60% {border-color: #1e876d;}
+  65% {border-color: #9DF3C4;}
+  70% {border-color: #1e876d;}
+  75% {border-color: #9DF3C4;}
+  80% {border-color: #1e876d;}
+  85% {border-color: #9DF3C4;}
+  90% {border-color: #1e876d;}
+  95% {border-color: #9DF3C4;}
+  100% {border-color: #1e876d;} 
+}
