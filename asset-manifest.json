@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/arnav-rustagi/Todo-Application-Coding-Blocks/static/css/main.e943ffdc.css",
+    "main.js": "/arnav-rustagi/Todo-Application-Coding-Blocks/static/js/main.6bec511b.js",
+    "index.html": "/arnav-rustagi/Todo-Application-Coding-Blocks/index.html",
+    "main.e943ffdc.css.map": "/arnav-rustagi/Todo-Application-Coding-Blocks/static/css/main.e943ffdc.css.map",
+    "main.6bec511b.js.map": "/arnav-rustagi/Todo-Application-Coding-Blocks/static/js/main.6bec511b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e943ffdc.css",
+    "static/js/main.6bec511b.js"
+  ]
+}
