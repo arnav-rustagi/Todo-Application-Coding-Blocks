@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("https://picsum.photos/1300/715?grayscale");
+  background: linear-gradient( rgba(98, 210, 162,0.15) 100%, rgba(98, 210, 162,0.15)100%), url('https://picsum.photos/1280/620?grayscale');
 }
 .todo-app {
   display: flex;
@@ -15,12 +15,15 @@ body {
   justify-content: start;
   width: 520px;
   min-height: 200px;
-  background: #3e3e3e;
+  background: rgba(0, 0, 0, 0.7) ;
   text-align: center;
-  margin: 128px auto;
+  margin: 10% 30% 0%;
   border-radius: 10px;
   padding-bottom: 32px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-height: 70vh;
+  overflow-y: auto;
+  
 }
 
 h1 {
@@ -61,7 +64,7 @@ h1 {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
-  background-color: #9DF3C4;
+  background-color: #82f4b6;
   color: #fff;
   text-transform: capitalize;
 
@@ -74,12 +77,10 @@ h1 {
 }
 
 .todo-button.edit {
-  background: linear-gradient(
-    90deg,
-    #9DF3C4 0%,
-    #62D2A2 100%
-  );
+  background-color: #82f4b6;
   padding: 16px 22px;
+  animation-name: changingBgColor;
+  animation-duration: 60s;  
 }
 
 .todo-container {
@@ -96,7 +97,7 @@ h1 {
   color: #fff;
   background: linear-gradient(
     90deg,
-    grey 0%,
+    #3d7f62 0%,
     #62D2A2 50%
   );
 
@@ -108,7 +109,7 @@ h1 {
 .todo-row:nth-child(4n + 1) {
   background: linear-gradient(
     90deg,
-    grey 0%,
+    #517a63 0%,
     #9DF3C4 50%
   );
 }
@@ -116,15 +117,15 @@ h1 {
 .todo-row:nth-child(4n + 2) {
   background: linear-gradient(
     90deg,
-    grey 0%,
-    #D7FBE8 50%
+    #6a8275 0%,
+    #ccffe4 50%
   );
 }
 
 .todo-row:nth-child(4n + 3) {
   background: linear-gradient(
     90deg,
-    grey 0%,
+    #15745c 0%,
     #1FAB89 50%
   );
 }
@@ -149,6 +150,19 @@ h1 {
   animation-name: changingColor;
   animation-duration: 60s;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  visibility: hidden;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136,0.4);
+  border-radius: 5px;
+}
+
 @keyframes changingColor{
   0% {color: #9DF3C4;}
   5% {color: #1e876d;}
